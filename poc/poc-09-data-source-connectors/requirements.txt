@@ -1,0 +1,5 @@
+# POC-09 additional dependencies (add to shared poc/requirements.txt)
+httpx>=0.27
+boto3>=1.34
+cryptography>=42.0
+python-dateutil>=2.9
