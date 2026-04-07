@@ -203,7 +203,7 @@ class GitHubConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConn
                     if docs:
                         yield docs
                     page += 1
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

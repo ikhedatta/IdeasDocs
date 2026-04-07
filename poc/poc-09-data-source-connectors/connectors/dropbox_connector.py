@@ -219,7 +219,7 @@ class DropboxConnector(BaseConnector, LoadConnector, PollConnector, BrowsableCon
         if batch:
             yield batch
 
-        return SyncCheckpoint(last_sync_end=end, cursor=new_cursor)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

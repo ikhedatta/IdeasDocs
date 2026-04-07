@@ -166,7 +166,7 @@ class ConfluenceConnector(BaseConnector, LoadConnector, PollConnector, Browsable
             if not cursor:
                 break
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

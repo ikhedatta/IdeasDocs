@@ -213,7 +213,7 @@ class BitbucketConnector(BaseConnector, LoadConnector, PollConnector, BrowsableC
                     if not data.get("next"):
                         break
                     page += 1
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

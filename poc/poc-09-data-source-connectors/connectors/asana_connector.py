@@ -197,7 +197,7 @@ class AsanaConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConne
                     break
                 offset = next_page["offset"]
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

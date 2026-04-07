@@ -183,7 +183,7 @@ class ZendeskConnector(BaseConnector, LoadConnector, PollConnector, BrowsableCon
                     break
                 page += 1
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

@@ -148,7 +148,7 @@ class DiscordConnector(BaseConnector, LoadConnector, PollConnector, BrowsableCon
                 yield [self._message_to_doc(m, ch["name"]) for m in filtered]
                 after = messages[-1]["id"]
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

@@ -147,7 +147,7 @@ class S3Connector(BaseConnector, LoadConnector, PollConnector, BrowsableConnecto
         if batch:
             yield batch
 
-        return SyncCheckpoint(last_sync_end=max_modified)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

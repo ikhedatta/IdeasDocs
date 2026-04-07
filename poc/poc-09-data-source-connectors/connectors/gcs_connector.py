@@ -170,7 +170,7 @@ class GCSConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConnect
             page_token = data.get("nextPageToken", "")
             if not page_token:
                 break
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

@@ -194,7 +194,7 @@ class GitLabConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConn
                     if filtered:
                         yield [self._issue_to_doc(pid, i) for i in filtered]
                     page += 1
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

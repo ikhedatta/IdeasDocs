@@ -186,7 +186,7 @@ class JiraConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConnec
             if start_at >= data.get("total", 0):
                 break
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 

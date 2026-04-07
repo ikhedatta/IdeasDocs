@@ -220,7 +220,7 @@ class GmailConnector(BaseConnector, LoadConnector, PollConnector, BrowsableConne
             if not page_token:
                 break
 
-        return SyncCheckpoint(last_sync_end=end)
+        # Checkpoint managed by SyncEngine
 
     # ── BrowsableConnector ─────────────────────────────────────────
 
