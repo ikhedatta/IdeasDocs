@@ -27,6 +27,7 @@ These Proof-of-Concept implementations extract the **most valuable patterns** fr
 | [poc-08](poc-08-retrieval-debugger-ui/) | **Retrieval Debugger UI** | Next.js UI for retrieval testing, score visualization, A/B comparison | Score bars, timing breakdown, overlap analysis, batch test runner |
 | [poc-09](poc-09-data-source-connectors/) | **Data Source Connectors** | Connector framework for 13 external sources with sync orchestration | Factory+registry pattern, mixin interfaces, encrypted creds, checkpoint sync |
 | [poc-10](poc-10-data-source-ui/) | **Data Source Management UI** | Next.js UI for connector catalog, connect wizard, sync dashboard, content browser | Source catalog grid, 3-step wizard, sync timeline, tree browser |
+| [poc-11](poc-11-pdf-parsing/) | **PDF Parsing Pipeline** | Efficient PDF text extraction with garble detection, OCR fallback, layout analysis, chunking | 3-strategy garble detection (PUA/CID/font-encoding), dual-library extraction, K-Means column detection |
 
 ### Frontend POCs (Next.js)
 | POC | Port | Backend Dependency |
